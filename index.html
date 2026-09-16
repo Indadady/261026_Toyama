@@ -23,6 +23,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://indadady.github.io/261026_Toyama/assets/images/og-thumb.jpg">
     <link rel="image_src" href="https://indadady.github.io/261026_Toyama/assets/images/og-thumb.jpg">
+    <link rel="icon" type="image/png" href="assets/images/logo-jeongseon.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -89,7 +90,8 @@
             .print-header-top { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 2px solid #004098; padding-bottom: 10px; margin-bottom: 14px; }
             .print-header-top img { height: 36px; }
             .print-doc-no { font-size: 12px; color: #64748b; }
-            .print-title { text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.4px; color: #0f172a; }
+            .print-title { display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center; font-size: 20px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.4px; color: #0f172a; }
+            .print-title img { height: 26px; width: auto; object-fit: contain; }
             .print-overview { display: flex; justify-content: space-between; background-color: #f8fafc !important; border: 1px solid #94a3b8 !important; border-radius: 6px; padding: 10px 16px; margin-bottom: 14px; font-size: 12.5px; }
             .print-overview .label { font-weight: 700; color: #004098; margin-right: 6px; }
             .tm-table { width: 100%; border-collapse: collapse; font-size: 11px; table-layout: fixed; border: 2px solid #1e293b !important; margin-bottom: 10px; }
@@ -136,7 +138,10 @@
                 <img src="https://blogger.googleusercontent.com/img/a/AVvXsEitI-Z-hD82keOJ1AqHw-VTZjpw2U-O5UjtV9h3zblyG0wjsVfBWe9X9o0Q_Spctrt7krkd9qXO0xKTmGJLw4gyMZrRqpshKMFttnyx6OcC8-IGz3XLUZpGQOnRqVdol8jz5HuoDLqsEifnVRhcjUJHm13Sz8JrX9aPswMNUwZPvGtJEnQjhc2PiXlo-B8" alt="투어메이커 로고">
                 <div class="print-doc-no">문서번호: TM-261026-TY</div>
             </div>
-            <div class="print-title">[정선군시설관리공단] 도야마·알펜루트 3박 4일 일정표</div>
+            <div class="print-title">
+                <img src="assets/images/logo-jeongseon.png" alt="정선군">
+                <span>[정선군시설관리공단] 도야마·알펜루트 3박 4일 일정표</span>
+            </div>
             <div class="print-overview">
                 <div><span class="label">행사기간</span> 2026. 10. 26 (월) ~ 10. 29 (목)</div>
                 <div><span class="label">행사인원</span> 10+1 (이사님들 10명)</div>
@@ -253,7 +258,10 @@
                 <img src="https://blogger.googleusercontent.com/img/a/AVvXsEitI-Z-hD82keOJ1AqHw-VTZjpw2U-O5UjtV9h3zblyG0wjsVfBWe9X9o0Q_Spctrt7krkd9qXO0xKTmGJLw4gyMZrRqpshKMFttnyx6OcC8-IGz3XLUZpGQOnRqVdol8jz5HuoDLqsEifnVRhcjUJHm13Sz8JrX9aPswMNUwZPvGtJEnQjhc2PiXlo-B8" alt="투어메이커 로고">
                 <div class="print-doc-no">문서번호: TM-261026-TY · 2/2</div>
             </div>
-            <div class="print-title">준비물 안내 · 스마트 가이드북</div>
+            <div class="print-title">
+                <img src="assets/images/logo-jeongseon.png" alt="정선군">
+                <span>준비물 안내 · 스마트 가이드북</span>
+            </div>
             <div class="print-overview">
                 <div><span class="label">행사명</span> 정선군시설관리공단 도야마·알펜루트</div>
                 <div><span class="label">일정</span> 2026. 10. 26 (월) ~ 10. 29 (목)</div>
@@ -340,11 +348,12 @@
 
         <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center px-4">
             <div class="animate-fade-in-up text-white w-full max-w-4xl flex flex-col items-center">
-                <div class="bg-white p-2 rounded-xl shadow-2xl mb-6 inline-block">
-                    <img src="assets/images/jeongseon-logo.jpg" alt="국민고향 정선" class="h-16 md:h-20 object-contain">
+                <div class="bg-white/95 backdrop-blur px-5 py-2.5 rounded-full inline-flex items-center gap-2.5 mb-6 border border-white/20 shadow-xl text-slate-800">
+                    <img src="assets/images/logo-jeongseon.png" alt="정선군" class="h-7 md:h-8 w-auto object-contain">
+                    <span class="text-sm md:text-base font-bold tracking-tight">시설관리공단</span>
                 </div>
                 <span class="bg-blue-700/90 text-white px-6 py-2 rounded-full text-base md:text-lg font-bold mb-6 inline-block border border-white/20 shadow-lg tracking-wide">
-                    정선군시설관리공단 단독행사
+                    단독행사
                 </span>
                 <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-2xl font-[Nanum_Myeongjo] leading-tight">
                     도야마 · 알펜루트<br>

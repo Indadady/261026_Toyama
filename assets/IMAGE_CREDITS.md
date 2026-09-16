@@ -15,7 +15,7 @@ All sightseeing stills are stored locally under `assets/images/` and sourced fro
 | day3-takayama.jpg | [Sanmachi Takayama06ds3872.jpg](https://commons.wikimedia.org/wiki/File:Sanmachi_Takayama06ds3872.jpg) | CC BY-SA 3.0 |
 | day3-shirakawago.jpg | [Ogimachi Village-02.jpg](https://commons.wikimedia.org/wiki/File:Ogimachi_Village-02.jpg) | CC BY-SA 3.0 |
 | day4-kansui.jpg | [Fugan Canal Kansui Park 260123 19.jpg](https://commons.wikimedia.org/wiki/File:Fugan_Canal_Kansui_Park_260123_19.jpg) | CC BY-SA 4.0 |
-| jeongseon-logo.jpg | 정선군 공식 슬로건 「국민고향 정선」 문양 (뉴스1 보도 이미지, 동일 출처를 북해도 가이드북과 공유) | 행사 안내용 재사용 |
+| logo-jeongseon.png | 담당자 제공 (정선군 공식 로고) | 제공 자료 |
 | guidebook-qr.png | 스마트 가이드북 URL QR (`https://indadady.github.io/261026_Toyama/`) | 자체 생성 |
 
 Hotel photographs are omitted until a staff-provided URL is shared.
