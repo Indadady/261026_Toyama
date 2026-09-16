@@ -66,6 +66,7 @@
         .map-bus {
             font-size: 22px; line-height: 1; display: inline-block;
             transform-origin: 50% 50%;
+            transform-box: fill-box;
             filter: drop-shadow(0 4px 8px rgba(15,23,42,0.35));
         }
         .timeline-dot {
@@ -1143,11 +1144,20 @@
       if (mode === 'alpine') return { emoji: '🚡', zeroDeg: 90 };
       return { emoji: '🚌', zeroDeg: 90 };
     }
+    function vehicleTransform(heading, zeroDeg) {
+      let rot = ((heading - zeroDeg) % 360 + 360) % 360;
+      if (rot > 90 && rot < 270) {
+        rot -= 180;
+        if (rot > 180) rot -= 360;
+        return `rotate(${rot}deg) scaleX(-1)`;
+      }
+      if (rot > 180) rot -= 360;
+      return `rotate(${rot}deg)`;
+    }
     function vehicleIcon(emoji, heading, zeroDeg) {
-      const rot = ((heading - zeroDeg) % 360 + 360) % 360;
       return L.divIcon({
         className: 'custom-icon',
-        html: `<span class="map-bus" style="transform:rotate(${rot}deg)">${emoji}</span>`,
+        html: `<span class="map-bus" style="transform:${vehicleTransform(heading, zeroDeg)}">${emoji}</span>`,
         iconSize: [28, 28],
         iconAnchor: [14, 14]
       });
@@ -1245,7 +1255,7 @@
           marker.setLatLng([a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f]);
           const heading = bearingDeg(a, b);
           const el = marker.getElement()?.querySelector('.map-bus');
-          if (el) el.style.transform = `rotate(${((heading - zeroDeg) % 360 + 360) % 360}deg)`;
+          if (el) el.style.transform = vehicleTransform(heading, zeroDeg);
           if (t < 1) requestAnimationFrame(frame);
           else resolve();
         }
